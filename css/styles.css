@@ -11,13 +11,19 @@ body {
     background: #1A1A1A;
     color: white;
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0; /* Было 15px, уменьшено до 10px */
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 900; /* Хедер теперь ниже бокового меню */
+    z-index: 900;
 }
+
+.top-bar h1 {
+    font-size: 20px; /* Было 22px, теперь компактнее */
+    margin: 0;
+}
+
 
 /* ===== БОКОВОЕ МЕНЮ ===== */
 .menu-btn {
