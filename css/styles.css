@@ -6,7 +6,7 @@ body {
     background-color: #F8F8F8;
 }
 
-/* ===== ВЕРХНЯЯ ПАНЕЛЬ ===== */
+/* ===== ВЕРХНЯЯ ПАНЕЛЬ (ХЕДЕР) ===== */
 .top-bar {
     background: #1A1A1A;
     color: white;
@@ -16,7 +16,7 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 900; /* Хедер теперь ниже бокового меню */
 }
 
 /* ===== БОКОВОЕ МЕНЮ ===== */
@@ -42,7 +42,7 @@ body {
     padding-top: 60px;
     transition: left 0.3s ease-in-out;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
+    z-index: 1002; /* Теперь боковая панель всегда выше хедера */
 }
 
 .sidebar ul {
@@ -88,11 +88,11 @@ body {
 /* ===== ВЫПАДАЮЩИЕ БЛОКИ ===== */
 .dropdowns {
     max-width: 600px;
-    margin: 10px auto; /* Уменьшил верхний и нижний отступ */
+    margin: 10px auto;
 }
 
 .dropdown {
-    margin-bottom: 10px; /* Меньше пространства между темами */
+    margin-bottom: 10px;
 }
 
 /* Кнопки раскрытия тем */
@@ -101,8 +101,8 @@ body {
     background: #3A3A3A;
     color: white;
     border: none;
-    padding: 8px; /* Меньше внутреннего отступа */
-    font-size: 16px; /* Чуть меньше шрифт */
+    padding: 8px;
+    font-size: 16px;
     cursor: pointer;
     text-align: left;
     transition: background 0.3s ease;
@@ -115,7 +115,7 @@ body {
 /* Контент тем (скрытый по умолчанию) */
 .dropdown-content {
     background: white;
-    padding: 5px; /* Меньше отступа внутри тем */
+    padding: 5px;
     border: 1px solid #ccc;
     max-height: 0;
     overflow: hidden;
@@ -125,7 +125,7 @@ body {
 
 /* Плавное появление */
 .dropdown-content.show {
-    max-height: 200px; /* Подстроено для меньших отступов */
+    max-height: 200px;
     opacity: 1;
 }
 
