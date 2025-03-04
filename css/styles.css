@@ -208,3 +208,40 @@
         width: 100px;
     }
 }
+
+.content-authors
+{
+    max-width: 800px; /* Ограничиваем ширину контента */
+    margin: 80px auto 20px auto; /* Учитываем отступ от хедера */
+    padding: 20px;
+    text-align: left; /* Выравнивание по левому краю */
+    
+}
+
+.authors-navigation {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Расстояние между элементами */
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.authors-navigation li {
+    display: inline-block;
+}
+
+.authors-navigation a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+.authors-navigation a:hover {
+    color: white;
+    background: #8B0000;
+    border-radius: 5px;
+}
