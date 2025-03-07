@@ -1,0 +1,104 @@
+Францыск Скарына
+Ян Чачот. 
+Францішак Багушэвіч. 
+Цётка. 
+Ядвігін Ш.
+Янка Купала. 
+Якуб Колас.
+Максім Багдановіч.
+Алесь Гарун. 
+Максім Гарэцкі.
+Змітрок Бядуля.
+Уладзімір Дубоўка.
+Кандрат Крапіва. 
+Міхась Зарэцкі. 
+Кузьма Чорны. 
+Пімен Панчанка.
+Iван Мележ
+
+
+
+
+<!DOCTYPE html>
+<html lang="be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аўтары</title>
+    <link rel="stylesheet" href="css/zero.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script> 
+    <style>
+        .fast-10-klass {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        .fast-10-klass a {
+            margin: 0 5px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Кнопка открытия бокового меню -->
+    <button id="menu-btn" class="menu-btn">☰</button>
+
+    <!-- Боковое меню -->
+    <nav id="sidebar" class="sidebar">
+        <button id="close-btn" class="close-btn">✖</button>
+        <ul>
+            <li><a href="index.html">Галоўная</a></li>
+            <li><a href="authors.html">Аўтары</a></li>
+            <li><a href="materials.html">Матэрыялы</a></li>
+            <li><a href="tests.html">Тэсты</a></li>
+        </ul>
+    </nav>
+
+    <!-- Верхняя панель -->
+    <header class="top-bar">
+        <h1>Аўтары</h1>
+    </header>
+
+    <!-- Быстрая навигация -->
+    <div class="quick-nav">
+        <a href="#class-10">Да 10 класа</a> | <a href="#class-11">Да 11 класа</a>
+    </div>
+
+    <!-- Контейнер с авторами -->
+    <div class="authors-container">
+
+        <!-- Начало 10 класса -->
+        <h2 id="class-10">10 клас</h2>
+
+        <div class="authors-card">
+            <img src="img/skarina.jpg" alt="Францыск Скарына">
+            <div>
+                <h2><a href="skarina.html">Францыск Скарына</a></h2>
+                <p>Выдатны дзеяч беларускага Адраджэння, асветнік і першадрукар.</p>
+            </div>
+        </div>
+
+        <!-- (Остальные авторы здесь) -->
+
+        <!-- Конец 10 класса, начало 11 -->
+        <h2 id="class-11">11 клас</h2>
+
+        <div class="authors-card">
+            <img src="img/melezh.jpg" alt="Іван Мележ">
+            <div>
+                <h2><a href="melezh.html">Іван Мележ</a></h2>
+                <p>Аўтар знакамітай трылогіі "Палеская хроніка".</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
